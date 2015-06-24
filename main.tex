@@ -1,0 +1,159 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{multibib}
+\newcites{con}{Peer-Reviewed Conference Papers}
+\newcites{jour}{Journal Papers}
+
+% personal data
+\name{William Berkley}{Easley III}
+\title{}                               % optional, remove / comment the line if not wanted
+\address{805 Lowander Lane}{Silver Spring, Maryland, 20901}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(202)~591~8342}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{mail@williamberkleyeasley.com}  
+\homepage{bit.ly/WilliamEasley}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Compiled on \today}                                 % optional, remove / comment the line if not wanted
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2015--2019 (Expected)}{Ph.D.}{University of Maryland, Baltimore County}{Baltimore, Maryland}{\textit{Human-Centered Computing}}{} 
+\cventry{2013--2015}{M.S.}{University of Maryland, Baltimore County}{Baltimore, Maryland}{\textit{Human-Centered Computing}}{GPA: 3.95/4.0}
+\cventry{2009--2013}{B.S.}{University of Maryland, Baltimore County}{Baltimore, Maryland}{\textit{Information Systems}}{Network Administration Certificate}
+
+\section{Honors and Achievements}
+\cvitemwithcomment{Graduate Scholarship Award}{Links Incorporated Silver Spring Chapter}{2015}
+\cvitemwithcomment{Phi Kappa Phi Honors Society}{UMB-UMBC Chapter}{2015}
+\cvitemwithcomment{2nd Place, Poster Presentation}{Information Systems Poster Contest, UMBC}{2015}
+\cvitemwithcomment{Graduate Scholarship Award}{HIMSS National Capital Area Chapter}{2014}
+\cvitemwithcomment{1st Place, Poster Presentation}{36th Annual Graduate Research Competition, UMBC}{2014}
+\cvitemwithcomment{1st Place, Oral Presentation}{PROMISE Research Symposium UMCP}{2014}
+\cvitemwithcomment{NSF LSAMP Bridge to the Doctorate Fellow}{UMBC}{2013-2015}
+\cvitemwithcomment{Presidents List}{UMBC}{Spring 2013}
+
+%PUBLICATIONS SECTION BEGIN
+\section{Publications}
+
+%Numbering
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}{ }}
+\makeatother
+
+%Peer Reviewed Conference Publications Subsection
+\nocitecon{*}
+\bibliographystylecon{plain}
+\bibliographycon{ConferencePublications}
+
+%Journal Publications Subsection
+%\nocitejour{*}
+%\bibliographystylejour{plain}
+%\bibliographyjour{JournalPublications}
+
+\section{Presentations}
+\subsection{Oral Presentations}
+\begin{itemize}
+\item{\textbf{Making 3D Printing Accessible for Individuals with Intellectual Disabilities [Talk]}, UMBC's 37th Annual Graduate Research Conference, \textit{March 2015}}
+\item{\textbf{Making 3D Printing Accessible for Individuals with Intellectual Disabilities [Lightning Talk]}, University System of Maryland PROMISE Research Symposium and Professional Development Conference, \textit{February 2015}}
+\item{\textbf{Developing a Mobile Assistive Technology to Support Individuals who are Blind with Medication Management [Talk]}, University of Maryland, Eastern Shore Regional Research Symposium, \textit{April 2014}}
+\item{\textbf{Developing a Mobile Assistive Technology to Help Blind People Improve their Quality of Life through Regulating their Medication Management [Talk]}, University System of Maryland PROMISE AGEP Research Symposium and Development Conference, \textit{February 2014}}
+\end{itemize}
+
+\subsection{Poster Presentations}
+\begin{itemize}
+\item{\textbf{An Empirical Study of Barriers and Strategies to Medication Management for Individuals with Visual Impairments}, UMBC Department of Information Systems Poster Contest, \textit{April 2015}}
+\item{\textbf{Developing a Mobile Assistive Technology to Support Individuals who are Blind with Medication Management}, UMBC Department of Information Systems Poster Contest, \textit{April 2014}}
+\item{\textbf{Developing a Mobile Assistive Technology to Support Individuals who are Blind with Medication Management}, UMBC's 36th Annual Graduate Research Conference, \textit{March 2014}}
+\end{itemize}
+
+\section{Research Experience}
+\subsection{Graduate Researcher, UMBC}
+
+\begin{itemize}
+\item {Working to better identify common issues that occur during the medication management process for individuals with visual impairments and to provide a technological recommendation for future technologies, \textit{Fall 2014-Present}}
+\item{Working to develop instructional materials to teach individuals with intellectual disabilities about the fundamentals of 3D printing. Also helping to teach undergraduate students and young adults with intellectual disabilities about 3D printing using the Printrbot Simple Metal in an integrated classroom setting, \textit{Spring 2015-Present}}
+\end{itemize}
+
+\section{Teaching Experience}
+\cvitemwithcomment{Co-Instructor}{IS298 3D Printing and Entrepreneurship, UMBC}{Spring 2015}
+\cvitemwithcomment{Summer Camp Counselor}{Young Scientist Academy, Montgomery College}{2003, 2004, 2005, 2006, 2007}
+
+\section{Academic  Service and Volunteer Work}
+\cvitemwithcomment{Organizing Committee, HCC FIKA (Coffee Hour)}{Department of IS, UMBC}{2015-Present}
+\cvitemwithcomment{Secondary Reviewer, Work in Progress Papers}{ACM CHI 2015}{2015}
+\cvitemwithcomment{Communications Officer}{Graduate Organization for Information Systems, UMBC}{2015-Present}
+\cvitemwithcomment{Guest Speaker, Internship in Brain Science Program}{Johns Hopkins University}{2014}
+\cvitemwithcomment{Panelist, Preparing for Graduate Study}{Escuela Superior Politécnica del Litoral}{2014}
+\cvitemwithcomment{Search Committee Member}{Associate Director of Disability Services, UMBC}{2014}
+\cvitemwithcomment{Student Member, Promotion and Tenure Committee}{Department of IS, UMBC}{2014}
+
+\section{Work Experience}
+\cventry{2012--2013}{Student Desktop Support Technician}{Division of Information Technology, UMBC}{Baltimore, Maryland}{}{}
+\cventry{2010, 2011}{Summer Technology Modernization Team}{Department of Strategic Project Management and Planning, MCPS}{Rockville, Maryland}{}{}
+
+\section{Leadership Activities}
+\cvitemwithcomment{President}{Fountain of Grace Bible Study, UMBC}{2012-2013}
+
+\section{Affiliations and Membership}
+\cvitemwithcomment{Association for Computing Machinery}{}{2014-Preset}
+\cvitemwithcomment{Healthcare Information and Management Systems Society}{}{2014-Present}
+
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+
+
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
